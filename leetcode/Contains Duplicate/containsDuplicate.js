@@ -13,3 +13,13 @@
   }
   return false;
 };
+
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ * 
+ * Faster one line solution
+ */
+var containsDuplicate = function(nums) {
+  return new Set(nums).size != nums.length ? true : false;
+};
